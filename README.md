@@ -1,5 +1,5 @@
 # streamline-delta-arduino
-working repo for the WASP reconfiguration
+Working repo to reconfigure the WASP delta printer using arduino to control the steppers. This methodology is required to circumnavigate the proprietory software coming with the installed WASP motherboard.
 
 ____________________________________________________
 
