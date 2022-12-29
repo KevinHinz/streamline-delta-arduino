@@ -1,0 +1,39 @@
+Some basic information
+
+____________________________________________________
+
+The Arduino used in Streamline-2022 is a fake and a programmer must be used to upload sketches to the board.
+The steps are as follows:
+1. Connect the programmer to the CPU where the AVRISP mk2 is connected to the cpu and the arduino board is powered with its 5v USB. 
+- if everything is correctly configured, the light on the programmer will light up green
+2. In the Arduino IDE:
+- Check the serial port as you normally would.
+- Select **Tools** > **Board** > **Aurduino Mega or Mega 2560** and **Tools** > **Programmer** > **AVRISP mkII** to choose the correct board and programmer.
+- Install the mk2 driver if needed; the instructions for a Windows computer are below.
+3. **Sketch** > **Upload Using Programmer (CTRL+SHIFT+U)** to upload your sketch
+- The IDE will give a progress bar for compiling and uploading
+- The exterior light on the programmer will switch to orange and the interior light will flash green
+- the the process is complete, both lights on the programmer wil stay green and the progress bar will say "Done uploading."
+
+
+
+The windows driver for the AVRISP MK2 can be [found here]>(https://www.olimex.com/Products/AVR/Programmers/AVR-ISP-MK2/resources/DRIVER-MK2-AS-6-7-W10.zip), and instructions on the installation are [here](https://www.olimex.com/forum/index.php?topic=5975.0):
+
+    How to manually install the drivers, over the automatically installed ones or Jungo ones:
+
+    1.1 Make sure that you have downloaded and extracted the drivers provided for AVR-ISP-MK2, available here:
+
+    https://www.olimex.com/Products/AVR/Programmers/AVR-ISP-MK2/resources/DRIVER-MK2-AS-6-7-W10.zip
+
+    1.2. Connect AVR-ISP-MK2 to the personal computer.
+    1.3. You should now have some entry for it in "Windows Device Manager". If you can't identify the entry unplug and re-plug the AVR-ISP-MK2 until you are sure. It might be good idea to uninstall any drivers related to the tool, but in most cases if you do everything correctly this shouldn't matter.
+    1.4. Right-click over the entry for the cable.
+    1.5. Select "Update Driver Software".
+    1.6. Select "Browse my computer for driver software".
+    1.7. Select the bottom option "Let me pick from a list of drivers on my computer".
+    1.8. Click "Have Disk" and point to the place where you extracted the drivers from the archive and select "AVRISP_mkII.inf" then click "Open".
+    1.9. Select "Next", and if a warning pops up select "Install Anyway" and after installation close the window.
+    1.10. Inspect the new entry in "Windows Device Manager" after the driver installation and ensure that there are no errors or warnings.
+    1.11. Test again.
+
+____________________________________________________
