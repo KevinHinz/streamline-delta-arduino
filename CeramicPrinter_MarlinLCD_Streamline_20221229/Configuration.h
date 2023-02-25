@@ -375,7 +375,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define MANUAL_X_HOME_POS 0
 
 #define MANUAL_Y_HOME_POS 0  
-#define MANUAL_Z_HOME_POS 508.2 //this line as copied from http://forums.reprap.org/read.php?397,394799
+#define MANUAL_Z_HOME_POS 432.2 //this line as copied from http://forums.reprap.org/read.php?397,394799
 //MaPS printer was aprox 400
 ///////////////////////////////////////////////////
 //this Manual_Z_Home_POS is for an empty carrige. Tool tip must be subtracted from this number or added
