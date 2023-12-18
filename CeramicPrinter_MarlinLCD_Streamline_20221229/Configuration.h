@@ -65,42 +65,18 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Center-to-center distance of the holes in the diagonal push rods.//-measured from printer-
 #define DELTA_DIAGONAL_ROD 293.0 // mm
-//323mm is as measured
-////////////////////////////////////////////////////////////////////////////////
-//this as determined when we fabricated the push-rods
-////////////////////////////////////////////////////////////////////////////////
-
 
 // Horizontal offset from middle of printer to smooth rod center.//-measured from CAD drawing-
-//#define DELTA_SMOOTH_ROD_OFFSET 220.6530 // mm  //1st test round
-//#define DELTA_SMOOTH_ROD_OFFSET 220.5774 // mm  //2nd test round
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
 #define DELTA_SMOOTH_ROD_OFFSET  226.000
-// 220.5774mm confirmed (in CAD) offset length 20150920, on the Delta Base
-// 219.9995mm confirmed (in CAD) offset length 20150920, on the Delta Tower Head
-////////////////////////////////////////////////////////////////////////////////
-
-
 
 // Horizontal offset of the universal joints on the end effector.//-measured from CAD drawing-
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
 #define DELTA_EFFECTOR_OFFSET 42.8000 // mm   //as defined in CAD drawing  
-//35.1721mm confirmed (in CAD) offset length 20150920
-////////////////////////////////////////////////////////////////////////////////
 
 // Horizontal offset of the universal joints on the carriages. //-measured from CAD drawing-
 #define DELTA_CARRIAGE_OFFSET 33.5000 // mm
-//15.7445mm confirmed (in CAD) offset length 20150920
-////////////////////////////////////////////////////////////////////////////////
-
 
 // Effective horizontal distance bridged by diagonal push rods.
 #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
-//(DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET) = (220.6530 - 38.3 - 39.5266)
-//220.6530-35.1721-15.7445=169.7364
-//220.5774-35.1721-15.7445=169.6608
 
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
