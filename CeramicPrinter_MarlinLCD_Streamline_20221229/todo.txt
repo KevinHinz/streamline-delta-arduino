@@ -10,6 +10,12 @@ Steps to do
 			3) -	#define DELTA_EFFECTOR_OFFSET
 			4) - 	#define DELTA_CARRIAGE_OFFSET
 			5)	#define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
+			
+					**RESULTS**
+						1) the MANUAL_Z_HOME_POS was adjusted up 76mm to 432.2; 432.7 would be more accurate but is not required at this time.
+						2) The calibration is off... there is a crown in the horizontal motion, where the tool tip touches the bed when approaching a 30-40mm radius (from bed center)
+					
+			
 			6)	*if there are X,Y limits, modify:
 					#define X_MAX_POS 101
 					#define X_MIN_POS
@@ -21,3 +27,23 @@ Steps to do
 			1) 	connection, baud rate (windows/mac)
 			2) 	run file
 	
+						**RESULTS**
+						1) the software seems to work ok.
+						2) there is a retract move when the layer completes (and +Z motion occurs)... this should be removed from the GCode generator.
+						3) I suspect that the extrusion multiplier range may need to be increased; but it is impossible to confirm until clay is extruded.
+						
+		Install list for Joëlle's computer
+			1) git bash, or equivilent, if not already
+			2) iterm2, for a better terminal experience
+			3) fork, for better branch management
+			3) github account, for better workflow and SSH capabilities.
+			3) define a repo folder for the purpose of managing the files we share, likely root/repos/github/
+				then folders for: 
+				joelle.../
+				aurelianammon/
+				KevinHinz/
+				
+				
+				
+				
+					
