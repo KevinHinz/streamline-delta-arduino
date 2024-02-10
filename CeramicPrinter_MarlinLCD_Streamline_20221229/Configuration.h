@@ -64,43 +64,25 @@
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 // Center-to-center distance of the holes in the diagonal push rods.//-measured from printer-
-#define DELTA_DIAGONAL_ROD 293.0 // mm
-//323mm is as measured
-////////////////////////////////////////////////////////////////////////////////
-//this as determined when we fabricated the push-rods
-////////////////////////////////////////////////////////////////////////////////
+//#define DELTA_DIAGONAL_ROD 293.0 // mm
+#define DELTA_DIAGONAL_ROD 250.0 // mm
 
-
-// Horizontal offset from middle of printer to smooth rod center.//-measured from CAD drawing-
-//#define DELTA_SMOOTH_ROD_OFFSET 220.6530 // mm  //1st test round
-//#define DELTA_SMOOTH_ROD_OFFSET 220.5774 // mm  //2nd test round
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
+// Horizontal offset from middle of printer to smooth rod center.
 #define DELTA_SMOOTH_ROD_OFFSET  226.000
-// 220.5774mm confirmed (in CAD) offset length 20150920, on the Delta Base
-// 219.9995mm confirmed (in CAD) offset length 20150920, on the Delta Tower Head
-////////////////////////////////////////////////////////////////////////////////
+// *This DIM is critical but the delta-wasp DELTA-SMOOTH-ROD-OFFSET 150.0 seems a bit small
 
+// Horizontal offset of the universal joints on the end effector./
+//#define DELTA_EFFECTOR_OFFSET 42.8000 // mm  
+#define DELTA_EFFECTOR_OFFSET 36.0 // mm   
+// *No real reason to change at this time because it has a part-relationship with the MANUAL_Z_HOME_POS 
 
-
-// Horizontal offset of the universal joints on the end effector.//-measured from CAD drawing-
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-#define DELTA_EFFECTOR_OFFSET 42.8000 // mm   //as defined in CAD drawing  
-//35.1721mm confirmed (in CAD) offset length 20150920
-////////////////////////////////////////////////////////////////////////////////
-
-// Horizontal offset of the universal joints on the carriages. //-measured from CAD drawing-
-#define DELTA_CARRIAGE_OFFSET 33.5000 // mm
-//15.7445mm confirmed (in CAD) offset length 20150920
-////////////////////////////////////////////////////////////////////////////////
-
+// Horizontal offset of the universal joints on the carriages. 
+//#define DELTA_CARRIAGE_OFFSET 33.5000 // mm
+#define DELTA_CARRIAGE_OFFSET 0.0 // mm
+// *This DIM is likely the greatest cause for the issue as if is releated to the DELTA-SMOOTH-ROD-OFFSET 
 
 // Effective horizontal distance bridged by diagonal push rods.
 #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
-//(DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET) = (220.6530 - 38.3 - 39.5266)
-//220.6530-35.1721-15.7445=169.7364
-//220.5774-35.1721-15.7445=169.6608
 
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -375,7 +357,10 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define MANUAL_X_HOME_POS 0
 
 #define MANUAL_Y_HOME_POS 0  
-#define MANUAL_Z_HOME_POS 432.2 //this line as copied from http://forums.reprap.org/read.php?397,394799
+//#define MANUAL_Z_HOME_POS 432.2 //this line as copied from http://forums.reprap.org/read.php?397,394799
+#define MANUAL_Z_HOME_POS 320 
+// *This DIM pulled from the delta-open-wasp value. The value is intionally low as a precautionary measure to prevent crashing  
+///////////////////////////////////////////////////
 //MaPS printer was aprox 400
 ///////////////////////////////////////////////////
 //this Manual_Z_Home_POS is for an empty carrige. Tool tip must be subtracted from this number or added

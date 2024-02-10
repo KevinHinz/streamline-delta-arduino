@@ -32,16 +32,7 @@ Steps to do
 						2) there is a retract move when the layer completes (and +Z motion occurs)... this should be removed from the GCode generator.
 						3) I suspect that the extrusion multiplier range may need to be increased; but it is impossible to confirm until clay is extruded.
 						
-		Install list for Joëlle's computer
-			1) git bash, or equivilent, if not already
-			2) iterm2, for a better terminal experience
-			3) fork, for better branch management
-			3) github account, for better workflow and SSH capabilities.
-			3) define a repo folder for the purpose of managing the files we share, likely root/repos/github/
-				then folders for: 
-				joelle.../
-				aurelianammon/
-				KevinHinz/
+		
 				
 				
 				
