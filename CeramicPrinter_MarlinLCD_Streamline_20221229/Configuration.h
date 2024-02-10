@@ -358,7 +358,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 #define MANUAL_Y_HOME_POS 0  
 //#define MANUAL_Z_HOME_POS 432.2 //this line as copied from http://forums.reprap.org/read.php?397,394799
-#define MANUAL_Z_HOME_POS 330 
+#define MANUAL_Z_HOME_POS 430 
 // *This DIM pulled from the delta-open-wasp value. The value is intionally low as a precautionary measure to prevent crashing  
 ///////////////////////////////////////////////////
 //MaPS printer was aprox 400
