@@ -65,10 +65,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Center-to-center distance of the holes in the diagonal push rods.//-measured from printer-
 //#define DELTA_DIAGONAL_ROD 293.0 // mm
-#define DELTA_DIAGONAL_ROD 250.0 // mm
+#define DELTA_DIAGONAL_ROD 293.0 // mm
 
 // Horizontal offset from middle of printer to smooth rod center.
-#define DELTA_SMOOTH_ROD_OFFSET  226.000
+#define DELTA_SMOOTH_ROD_OFFSET  215.20
 // *This DIM is critical but the delta-wasp DELTA-SMOOTH-ROD-OFFSET 150.0 seems a bit small
 
 // Horizontal offset of the universal joints on the end effector./
@@ -358,7 +358,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 #define MANUAL_Y_HOME_POS 0  
 //#define MANUAL_Z_HOME_POS 432.2 //this line as copied from http://forums.reprap.org/read.php?397,394799
-#define MANUAL_Z_HOME_POS 320 
+#define MANUAL_Z_HOME_POS 430 
 // *This DIM pulled from the delta-open-wasp value. The value is intionally low as a precautionary measure to prevent crashing  
 ///////////////////////////////////////////////////
 //MaPS printer was aprox 400
